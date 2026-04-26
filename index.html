@@ -728,10 +728,13 @@
 </section>
 
 <footer>
-  <p>Designed &amp; built by <span>Sahas Timalsina</span> · Canberra, ACT · 2025</p>
+  <p>Designed &amp; built by <span>Sahas Timalsina</span> · Canberra, ACT · <span id="footer-year"></span></p>
 </footer>
 
 <script>
+  // Footer year
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
   // Mobile nav toggle
   const toggle = document.getElementById('nav-toggle');
   const navLinks = document.getElementById('nav-links');
